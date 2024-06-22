@@ -1,16 +1,23 @@
 ::-webkit-scrollbar {
-    width: 7px;
-    height: 7px;
+    width: 9px;
+    height: 9px;
 
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #dddbdb;
-    border-radius: 7px;
+    background: rgba(13, 110, 253, 0.55);
+    border-radius: 10px;
 }
 
 .navbar-nav .nav-link {
     color: rgba(13,110,253, 0.55);
 }
 
-
+.section-1 {
+    background-image: url('../assets/img/fondo.jpeg');
+        background-size: 100% auto;
+        background-position: center ;
+        background-repeat: no-repeat;
+        height: 100vh;
+        
+}
