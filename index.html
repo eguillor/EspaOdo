@@ -8,12 +8,13 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="css/style.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
 <body class="position-relative">
     <header >
         <nav class="navbar navbar-expand-lg bg-light shadow fixed-top mb-5">
             <div class="container">
-                <a class="navbar-brand " href="#">
+                <a class="navbar-brand animate__animated animate__slow" href="#section-1" aria-current="page"  data-scroll-spy>
                     <img src="./assets/logo.jpeg" width="150"  alt="">
                 </a>
                 <button class="navbar-toggler ms-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -22,9 +23,6 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#section-1" aria-current="page"  data-scroll-spy><h6 class="mb-0"> Inicio</h6></a>
-                        </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#section-2"  data-scroll-spy><h6 class="mb-0">Servicios</h6></a>
                         </li>
@@ -40,13 +38,11 @@
         </nav>
     </header>
     <main class="container-fluid px-0 ">
-        <section id="section-1" class="my-5 py-5 section-1" data-scroll-spy>
-            <article class="px-4 py-4 my-5 text-center text-light">
-                <h1 class="display-5 fw-bold ">Centered hero</h1>
+        <section id="section-1" class=" my-5 py-5 section-1 d-flex align-items-center justify-content-center" data-scroll-spy>
+            <article class="px-4 py-4 my-5 text-nowrap text-light text wow animate__animated animate__slideInDown animate__slow  ">
+                <h1 class="display-5 fw-bold ">"Tu sonrisa, nuestra prioridad"</h1>
                 <div class="col-lg-6 mx-auto ">
-                    <p class="lead  mb-4" >Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most
-                        popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system,
-                        extensive prebuilt components, and powerful JavaScript plugins.</p>
+                    <p class="lead  mb-4" >Sonríe con confianza, estamos aquí para ayudarte.</p>
                     <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
                         <button type="button" class="btn btn-primary btn-lg px-4 gap-3">RESERVÁ TU CONSULTA</button>
                     </div>
@@ -55,7 +51,7 @@
         </section>
 
         <section class="container my-5 py-5" id="section-2" data-scroll-spy>
-            <article class="text-center my-5 py-4 ">
+            <article class="text-center my-5 py-4 wow animate__animated animate__backInUp ">
                 <h2>SERVICIOS</h2>
                 <h3>Descubrí Nuestros Servicios</h3>
                 <div class="row row-cols-1 row-cols-md-4  g-2">
@@ -142,17 +138,19 @@
         </section>
 
         <section class="container my-5 py-5"  id="section-3" data-scroll-spy>
-            <article class="row flex-lg-row-reverse row  row-cols-1 row-cols-lg-2 g-3  my-5 py-4  ">
-                        <div class=" ">
+            <article class="row flex-lg-row-reverse g-2 row-cols-1 row-cols-lg-2   my-5 py-4  align-items-center">
+                        <div class="wow animate__animated animate__bounceInRight ">
                             <img src="./assets/logo.jpeg" class="d-block mx-auto img-fluid " alt="Bootstrap Themes" width="700"
                                 height="500" loading="lazy">
                         </div>
-                        <div class=" card shadow ">
-                            <div class="card-body text-center text-lg-start">
+                        <div class=" card shadow  h-100 wow animate__animated  animate__bounceInLeft animate__slow ">
+                            <div class="card-body text-center ">
                                 <h1 class="display-5 fw-bold text-body-emphasis  mb-3">¿Quiénes Somos?</h1>
-                                <p class="lead ">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most
-                                    popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system,
-                                    extensive prebuilt components, and powerful JavaScript plugins.</p>
+                                <p class="lead text-lg-start">En <span class="fw-bold text-primary text-opacity-75">Espacio odontológico</span>, nos dedicamos a ofrecer servicios odontológicos de alta calidad con un enfoque personalizado. Nuestro equipo de profesionales, desde odontólogos generales hasta especialistas en diversas áreas, trabaja con tecnología avanzada para asegurar tu bienestar bucal.<br /><br />
+
+                                Creemos en la prevención y educación en salud dental, guiándote en el cuidado diario de tus dientes y encías. Nuestros valores son la excelencia, confianza y empatía, creando un ambiente acogedor para cada visita.<br /><br />
+
+                                Gracias por confiar en <span class="fw-bold text-primary text-opacity-75">Espacio odontológico</span>. Estamos aquí para que tu sonrisa brille.</p>
 
                             </div>
                             
@@ -169,7 +167,7 @@
                     <p class="col-lg-8 mx-auto lead">
                         En caso de emergencias comuncarse a este número y lo atenderemos lo más pronto posible.
                     </p>
-                    <h4 class="display-5">+54 (9) 351-8146841</h4>
+                    <h4 class="display-5 text-nowrap">+54 (9) 351-8146841</h4>
                 </div>
             </article>
         </section>
@@ -220,7 +218,8 @@
                         <li class="nav-item  text-start"><a target="_blank" class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="https://maps.app.goo.gl/Vnxh2pJccoxTa3B8A"><i class="bi bi-geo-alt text-primary"></i> Bv Pte. Umberto Arturo Illia 68, X5000ASN Córdoba</a></li>
                     </ul>
                     <div class="ratio ratio-16x9">
-                    <iframe src="https://www.google.com/maps/d/embed?mid=1wiKto70KyO2rk6bFCv1WM1CnNLP0HEs&ehbc=2E312F" ></iframe>
+                        <iframe src="https://www.google.com/maps/d/embed?mid=1wiKto70KyO2rk6bFCv1WM1CnNLP0HEs&ehbc=2E312F&noprof=1" ></iframe>
+                        <div id="map" style="height: 400px;"></div>
                     </div>
                 </form>
             </div>
@@ -239,6 +238,11 @@
         integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
         crossorigin="anonymous"></script>
     <script src="js/index_dom.js" type="module"></script>
+    <script src="js/wow.js"></script>
+    <script>
+              new WOW().init();
+              </script>
+    
 </body>
 </html>
 
