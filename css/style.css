@@ -31,3 +31,7 @@
 .section-1 .text{
     text-shadow: -1px 5px 4px rgba(0, 0, 0, 0.63);
 }
+
+.text-2 {
+    text-shadow: -1px 5px 4px rgba(0, 0, 0, 0.20);
+}
