@@ -24,7 +24,7 @@
         <nav class="navbar navbar-expand-lg mb-5">
             <div class="container ">
                 <a class="navbar-brand z-0" href="#1" aria-current="page" data-scroll-spy>
-                    <img src="./assets/logo.png" width="35" alt="">
+                    <img src="./assets/logo-1.png" width="120" alt="">
                 </a>
                 <button class="navbar-toggler " type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -33,11 +33,7 @@
                 </button>
                 <div class="collapse navbar-collapse " id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0  d-flex flex-row justify-content-around flex-wrap">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#1" data-scroll-spy>
-                                INICIO
-                            </a>
-                        </li>
+
                         <li class="nav-item">
                             <a class="nav-link" href="#2" data-scroll-spy>
                                 URGENCIAS 24 HS
@@ -258,7 +254,7 @@
                         integral, pensando siempre en lo mejor para vos. Porque tu bienestar y tu felicidad nos
                         importan.</p>
                 </div>
-                <div class="swiper col-12">
+                <div class="swiper col-12 justify-content-center">
                     <div class="swiper-wrapper   people">
                         <div class="swiper-slide ">
                             <div class="card profile-card shadow-sm">
@@ -380,7 +376,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="d-grid my-4 col-6 mx-auto">
+                <div class="d-grid my-4 col-12 col-md-6 mx-auto">
                     <button class="btn btn-primary" type="button">CONOCER NUESTROS PROFESIONALES ODONTÓLOGOS</button>
                 </div>
             </div>
@@ -390,50 +386,54 @@
     <footer>
 
         <div class="shapeTop"></div>
-        <section class="container  d-flex flex-wrap justify-content-between align-items-center  py-4">
-            <img class="col-md-4 mb-0 img-fluid" src="./assets/logo-1.png" alt="">
-
-            <ul class="col-md-4 ">
-                <li>
-                    <p class="mb-0">Medios de pago</p>
-                    <p>Aceptamos tarjetas, efectivo y cheques.</p>
-                </li>
-                <li>
-                    <p class="mb-0">Obras sociales y Prepagas</p>
-                    <p>Consultános para saber tus beneficios.</p>
-                </li>
-            </ul>
-
-            <table class=" col-md-4">
-                <tbody>
-                    <tr>
-                        <th class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary"><i
-                                    class="bi bi-whatsapp me-2"></i>Turnos</a></th>
-                    </tr>
-                    <tr>
-                        <th class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary"><i
-                                    class="bi bi-hospital me-2"></i>Urgencias
-                                24 HS</a> </th>
-                    </tr>
-                    <tr>
-                        <th class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary"><i
-                                    class="bi bi-envelope me-2"></i>example@gmail.com</a></th>
-                    </tr>
-
-                    <tr>
-                        <th class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary"><i
-                                    class="bi bi-geo-alt me-2"></i>Blvd. Pte. Arturo Umberto Illia 68, X5000ASN
-                                Córdoba</a></th>
-                    </tr>
-                </tbody>
+        <section class="container  ">
+            <div class="row d-flex flex-wrap  align-items-center  py-4">
 
 
+                <img class="col-md-4 mb-0 img-fluid" src="./assets/logo-1.png" alt="">
 
-            </table>
+                <div class="col-md-4">
+                    <span>
+                        <p class="mb-0"><i class="bi bi-check-lg me-2 fs-5"></i>Medios de pago</p>
+                        <p>Aceptamos tarjetas, efectivo y cheques.</p>
+                    </span>
+                    <span>
+                        <p class="mb-0"><i class="bi bi-check-lg me-2 fs-5"></i>Obras sociales y Prepagas</p>
+                        <p>Consultános para saber tus beneficios.</p>
+                    </span>
+                </div>
+
+                <table class=" col-md-4">
+                    <tbody>
+                        <tr>
+                            <td class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary"><i
+                                        class="bi bi-whatsapp me-2"></i>Turnos</a></td>
+                        </tr>
+                        <tr>
+                            <td class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary"><i
+                                        class="bi bi-hospital me-2"></i>Urgencias
+                                    24 HS</a> </td>
+                        </tr>
+                        <tr>
+                            <td class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary"><i
+                                        class="bi bi-envelope me-2"></i>example@gmail.com</a></td>
+                        </tr>
+
+                        <tr>
+                            <td class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary"><i
+                                        class="bi bi-geo-alt me-2"></i>Blvd. Pte. Arturo Umberto Illia 68, X5000ASN
+                                    Córdoba</a></td>
+                        </tr>
+                    </tbody>
 
 
-            <div class="col-12 d-flex justify-content-around">
+
+                </table>
+
+            </div>
+            <div class="col-12 d-flex flex-lg-row flex-column justify-content-lg-around">
                 <p>Todos los derechos reservados ©2025 <b>Espacio Odontológico</b></p>
+
                 <p>Diseño <b>Facundo Eguillor</b> para <b>Espacio Odontológico</b></p>
 
             </div>
@@ -504,20 +504,16 @@
 
             // Responsive breakpoints
             breakpoints: {
-                "@0.00": {
-                    slidesPerView: 1,
-                    spaceBetween: 10,
-                },
-                "@0.75": {
+                640: {
                     slidesPerView: 2,
                     spaceBetween: 20,
                 },
-                "@1.00": {
+                768: {
                     slidesPerView: 3,
                     spaceBetween: 40,
                 },
-                "@1.50": {
-                    slidesPerView: 4,
+                1024: {
+                    slidesPerView: 3,
                     spaceBetween: 50,
                 },
             }
