@@ -206,7 +206,7 @@ background-size: 100% calc(2vw + 79px);
 
 @media (max-width: 768px) {
     .carousel-item>img {
-            height: 26rem;
+            height: 24rem;
     
         }
 
