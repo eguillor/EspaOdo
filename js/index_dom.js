@@ -13,4 +13,5 @@ d.addEventListener("DOMContentLoaded", (e) => {
                 elm.classList.remove("paused"); // les quitamos la clase paused
         })
     });
+
 })
