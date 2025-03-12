@@ -28,7 +28,7 @@ body {
 
 
 
-b, h5, h3, .nav-item>.nav-link{
+b, h5, h3, .nav-item>a{
     color: #88909d;
 }
 
